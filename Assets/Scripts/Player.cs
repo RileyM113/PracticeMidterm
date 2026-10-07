@@ -36,12 +36,4 @@ public class Player : MonoBehaviour
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpVelocity, rb.linearVelocity.z);
         }
     }
-
-    private void onCollisionEnter(Collision collision)
-    {
-        if  (collision.gameObject.tag == "Ground")
-        {
-            isGrounded = true;
-        }
-    }
 }
